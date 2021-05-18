@@ -1,6 +1,7 @@
--- Author: Max Dreher
+-- Author: Aubrey Stellman
 -- Last Modified: 5/18/2021
 -- Purpose: Lab 5 SOP equation implementation
+
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
@@ -28,9 +29,9 @@ ARCHITECTURE XYZ of bcd_to_7seg IS
 BEGIN
    a <= not(S1 OR S3 OR (NOT(S2) AND NOT(S0)) OR (S2 AND S0));
    b <= not(NOT(S2) OR (NOT(S1) AND NOT(S0)) OR (S1 AND S0));
-   c <= not(NOT(S1) OR S0 OR S2);
+   c <= not(NOT(S1) OR (S0 AND S2));
    d <= not(S3 OR (NOT(S2) AND NOT(S0)) OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1) AND S0));
-   e <= not((NOT(S2) AND NOT(S0)) OR (S1 AND NOT(S0)));
+   e <= not((NOT(S2) AND S0) OR (S1 AND NOT(S0)));
    f <= not(S3 OR (NOT(S1) AND NOT(S0)) OR (S2 AND NOT(S1)) OR (S2 AND NOT(S0)));
    g <= not(S3 OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1)));
 END XYZ;
