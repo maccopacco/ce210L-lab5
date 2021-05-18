@@ -26,11 +26,11 @@ ARCHITECTURE XYZ of bcd_to_7seg IS
    ALIAS g : STD_LOGIC is HEX(6);   
 
 BEGIN
-   a <= not( S1 OR S3 OR (NOT(S2) AND NOT(S0)) OR (S2 AND S0) ); -- put your equations inside the not() operations
-   b <= not( NOT(S2) OR (NOT(S1) AND NOT(S0)) OR (S1 AND S0) );
-   c <= not( NOT(S1) OR S0 OR S2 );
-   d <= not( S3 OR (NOT(S2) AND NOT(S0)) OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1) AND S0) );
-   e <= not( (NOT(S2) AND NOT(S0)) OR (S1 AND NOT(S0)) );
-   f <= not( S3 OR (NOT(S1) AND NOT(S0)) OR (S2 AND NOT(S1)) OR (S2 AND NOT(S0)) );
-   g <= not( S3 OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1)) );
+   a <= not(S1 OR S3 OR (NOT(S2) AND NOT(S0)) OR (S2 AND S0));
+   b <= not(NOT(S2) OR (NOT(S1) AND NOT(S0)) OR (S1 AND S0));
+   c <= not(NOT(S1) OR S0 OR S2);
+   d <= not(S3 OR (NOT(S2) AND NOT(S0)) OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1) AND S0));
+   e <= not((NOT(S2) AND NOT(S0)) OR (S1 AND NOT(S0)));
+   f <= not(S3 OR (NOT(S1) AND NOT(S0)) OR (S2 AND NOT(S1)) OR (S2 AND NOT(S0)));
+   g <= not(S3 OR (NOT(S2) AND S1) OR (S1 AND NOT(S0)) OR (S2 AND NOT(S1)));
 END XYZ;
