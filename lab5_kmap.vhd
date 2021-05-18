@@ -1,9 +1,6 @@
---NOTE: You need to update the header 
-
-
--- Author: Dr. David Foster
--- Last Modified: 8/13/2020
--- Purpose: use the DE10-Lite 7-segment LED displays
+-- Author: Max Dreher
+-- Last Modified: 5/18/2021 
+-- Purpose: Lab 5 SOP equation implementation
 
 
 

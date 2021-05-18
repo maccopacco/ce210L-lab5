@@ -1,5 +1,6 @@
--- Add a useful header
-
+-- Author: Max Dreher
+-- Last Modified: 5/18/2021
+-- Purpose: Lab 5 SOP equation implementation
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
